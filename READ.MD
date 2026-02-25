@@ -74,3 +74,10 @@
 - Does not mutate the original array
 - Skips empty (sparse) array slots
 - Validates callback function
+
+## Custom Array.prototype.myReduce Polyfill
+- Implements a custom version of JavaScript’s built-in reduce() method.
+- Validates this and ensures the callback is a function.
+- Handles optional initial accumulator value correctly.
+- Skips empty slots in sparse arrays using i in this.
+- Throws an error for empty arrays without an initial value.
