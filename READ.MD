@@ -81,3 +81,10 @@
 - Handles optional initial accumulator value correctly.
 - Skips empty slots in sparse arrays using i in this.
 - Throws an error for empty arrays without an initial value.
+
+
+## Custom Array.prototype.foreach Polyfill
+- Callback receives 3 arguments: value, index, array
+- typeof check ensures callback is a function.
+- i in this skips empty (sparse) array slots.
+- forEach always returns undefined.
