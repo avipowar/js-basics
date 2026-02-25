@@ -68,3 +68,9 @@
 - Does not mutate the original array
 - Skips empty (sparse) array slots
 - Validates callback function
+
+## Array.prototype.myFilter Polyfill
+- Returns a new array
+- Does not mutate the original array
+- Skips empty (sparse) array slots
+- Validates callback function
