@@ -42,22 +42,29 @@
 
 ## understanding `Prototype and Prototype Inheritance` in Javascript
 
-## Understanding Object.create() and Prototype Inheritance
+# Understanding Object.create() and Prototype Inheritance
 - Object.create(parent) creates a new object linked to the parent.
 - JavaScript follows a prototype chain to find properties.
 - If a property is not found in the object, JS looks up the chain.
 - Child objects can override parent properties.
 - Understanding Prototype Chain
 
-## Understanding this with Inherited Methods
+# Understanding this with Inherited Methods
 - this depends on how a function is called.
 - Even if a method exists in the parent object,this refers to the object that calls it.
 - Example: avinash.cookTraditionalDish() => this.name becomes "avinash" (not "ishwara")
 
-## Extending Built-in Objects (Array Prototype)
+# Extending Built-in Objects (Array Prototype)
 - Added custom method using Array.prototype.
 - All arrays automatically get access to that method.
 - Example: Array.prototype.last => [1,2,3].last() => 3
 - Adding properties to prototype makes them available to all instances.
 - Example: Array.prototype.avinash = "avinash"
 - and this process is called polyfill.
+
+
+## Array.prototype.myMap Polyfill
+- Returns a new array
+- Does not mutate the original array
+- Skips empty (sparse) array slots
+- Validates callback function
