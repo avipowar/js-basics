@@ -88,3 +88,31 @@
 - typeof check ensures callback is a function.
 - i in this skips empty (sparse) array slots.
 - forEach always returns undefined.
+
+
+
+
+## class understanding
+
+# javaScript Classes
+- class is a syntactic sugar over prototype-based inheritance.
+- The constructor() method runs automatically when using new.
+- It is used to initialize object properties.
+
+# Instance Properties
+- Properties defined with this belong to each instance.
+- Each object created using new gets its own copy.
+
+# Methods Inside Class (Prototype Methods)
+Methods defined inside the class body are added to prototype.
+
+# They are shared between all instances.
+- Methods defined inside the class body are added to prototype.
+- They are shared between all instances.
+
+# new Keyword
+- When you use new:
+- Creates empty object
+- Links it to prototype
+- Binds this
+- Returns the object automatically
