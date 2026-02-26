@@ -116,3 +116,19 @@ Methods defined inside the class body are added to prototype.
 - Links it to prototype
 - Binds this
 - Returns the object automatically
+
+
+
+## try catch block 
+
+# try
+- Runs the main logic.
+- Throws an error if mapLoaded is false.
+
+# catch
+- Catches the error.
+- Logs the error message.
+
+# finally
+- Always runs (whether error happens or not).
+- Used for cleanup or final steps.
