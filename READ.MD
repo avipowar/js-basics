@@ -171,3 +171,8 @@ Methods defined inside the class body are added to prototype.
 - try...catch is used for error handling in async functions.
 - Best practice: Use reject(new Error("message")) for structured error handling.
 
+
+## setTimeout() in JavaScript
+
+- setTimeout() is a built-in JavaScript function that executes a function after a specified delay (in milliseconds).
+- paly js code 
