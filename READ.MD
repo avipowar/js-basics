@@ -132,3 +132,42 @@ Methods defined inside the class body are added to prototype.
 # finally
 - Always runs (whether error happens or not).
 - Used for cleanup or final steps.
+
+
+
+
+
+## Promises 
+
+# Promise Fundamentals
+
+- A Promise represents an asynchronous operation.
+- It has three states:
+    - Pending
+    - Fulfilled (Resolved)
+    - Rejected
+- A Promise can be settled only once — either resolved or rejected.
+
+# Handling Promises
+- .then always return promise 
+- if you don't return anything it will automatically return undefined
+- .then() is used to handle resolved values.
+- .catch() is used to handle errors.
+- Returning a value inside .then() enables Promise chaining.
+- Function references can be passed directly: => promise.then(console.log)
+
+
+# Static Promise Methods
+
+- Promise.resolve(value) → Creates an immediately resolved promise.
+- Promise.reject(error) → Creates an immediately rejected promise.
+- Promise.allSettled([...]) → Waits for all promises and returns their status.
+- Promise.any([...]) → Returns the first successfully resolved promise.
+
+# Async/Await
+
+- async/await provides a cleaner syntax over .then() chaining.
+- await pauses execution until the Promise resolves or rejects.
+- try...catch is used for error handling in async functions.
+- Best practice: Use reject(new Error("message")) for structured error handling.
+
