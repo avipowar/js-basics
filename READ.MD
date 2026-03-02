@@ -176,3 +176,9 @@ Methods defined inside the class body are added to prototype.
 
 - setTimeout() is a built-in JavaScript function that executes a function after a specified delay (in milliseconds).
 - paly js code 
+
+
+## Closure in JavaScript
+- A closure is created when a function remembers and accesses variables from its outer function even after the outer function has finished executing.
+- A closure allows an inner function to access variables from its parent function.
+= Both zomato and blinkit remember the guestName variable.That memory behavior is closure.
